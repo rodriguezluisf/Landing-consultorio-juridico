@@ -851,10 +851,10 @@ section.lo_nuevo {
     z-index: -1; }
   section.lo_nuevo:before {
     width: 100%;
-    left: -10%; }
+    left: -50%; }
   section.lo_nuevo:after {
     width: 100%;
-    right: -10%; }
+    right: -50%; }
   section.lo_nuevo p {
     margin: auto; }
   section.lo_nuevo a {
