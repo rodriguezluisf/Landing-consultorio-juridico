@@ -4,6 +4,7 @@
 
 footer{
 	margin: 3rem auto 0;
+	@include max-width;
 	@include display-grid;
 	
 	
