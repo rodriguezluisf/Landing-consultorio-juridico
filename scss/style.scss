@@ -1,0 +1,20 @@
+// ------------------------------------ Global elements ------------------------------------ 
+@import 'elements/_mixins';
+@import 'elements/_config';
+@import 'elements/_fonts';
+@import 'elements/_artifacts';
+@import 'elements/_base';
+@import 'elements/_typography';
+@import 'elements/_sections';
+@import 'elements/_video';
+
+
+// ------------------------------------ Section elements ------------------------------------ 
+@import 'sections/_header';
+@import 'sections/_consultorio';
+@import 'sections/_tabs-container';
+@import 'sections/_grupos-apoyo';
+@import 'sections/_banner-dudas';
+@import 'sections/_lo-nuevo';
+@import 'sections/_informacion-legal';
+@import 'sections/_footer';

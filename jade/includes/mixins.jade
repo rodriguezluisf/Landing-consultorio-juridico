@@ -1,0 +1,27 @@
+//- ----------------------------
+//- ---------------------------- Grupos cards ------------------------------- //
+//- ----------------------------
+mixin grupos-cards(src, alt, title, text, link)
+	div.card
+		img(src=src alt=alt) 
+		h4= title
+		p= text
+		a(href=link) Consultar
+		
+		
+		
+		
+//- ----------------------------
+//- ---------------------------- Lo nuevo cards ------------------------------- //
+//- ----------------------------
+mixin lo-nuevo-cards(src, alt, title, link, txtbtn)
+	div.card
+		img(src=src alt=alt) 
+		h2= title
+		a(href=link)= txtbtn
+			
+
+
+
+
+

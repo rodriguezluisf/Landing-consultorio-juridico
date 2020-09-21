@@ -1,0 +1,110 @@
+/* ---------------------------------- informacion legal  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+footer{
+	margin: 3rem auto 0;
+	@include display-grid;
+	
+	
+	.first_fold{
+		border-radius: .3rem;
+		padding: 2rem 0;
+		grid-gap: 1rem;
+		background: $color_blue;
+		@include display-grid;
+		@include grid-parent-4-columns (1.5fr, 1fr, 1fr, 1fr);
+		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-2-columns (1fr, 1fr);
+		}
+		
+		@media (max-width: $breakpoint_4){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		img{
+			justify-self: center;
+		}
+		
+		p{
+			color: $color_white;
+			font-size: 15px;
+			line-height: 18px;
+		}
+		
+		p img{
+			display: inline-block;
+			margin-right: .5rem;
+		}
+		
+		a{
+			color: $color_white;
+			font-size: 15px;
+			line-height: 18px;
+			
+			&:hover{
+				&:after{
+					background: $color_white;
+				}
+			}
+			
+		}
+		
+		.contacto{
+			padding: 0 2rem 0 1rem;
+			
+			a{
+				&:after{
+					background: $color_white;
+					width: 100%;
+				}
+			}
+			
+		}
+		
+		.hablemos{
+			padding: 0 1rem;
+			
+			p{
+				margin: 1rem 0 0;
+			}
+			
+			img{
+				display: inline-block;
+				margin-right: .5rem;
+				margin-top: .5rem;
+			}
+			
+			h5{
+				&:nth-child(5){
+					margin-top: 1rem;
+				}
+			}
+		
+		}
+		
+		.navegacion{
+			padding: 0 1rem;
+			ul{
+				margin: 1rem 0;
+				padding: 0;
+			}
+			
+		}
+		
+	}
+	
+	.second_fold{
+		padding: 1rem 1rem 2rem;
+		p{
+			margin: auto;
+			font-size: 16px;
+		}
+	}
+	
+}
+	
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>youtube</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page-1920" transform="translate(-1148.000000, -4538.000000)">
+            <g id="footer" transform="translate(260.000000, 4351.000000)">
+                <g id="col" transform="translate(836.000000, 60.000000)">
+                    <g id="twitter" transform="translate(0.000000, 128.000000)">
+                        <g id="youtube" transform="translate(53.000000, 0.000000)">
+                            <polygon id="Path" fill="#5BBDFF" fill-rule="nonzero" points="14.6268 13.0581 14.6268 26.0127 26.9748 18.9477"></polygon>
+                            <g id="Group">
+                                <rect id="Rectangle" x="0" y="0" width="38.7" height="38.7" rx="6.3"></rect>
+                                <rect id="Rectangle" stroke="#5BBDFF" stroke-width="1.8" x="0.9" y="0.9" width="36.9" height="36.9" rx="5.4"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,167 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Consultorio Jurídico
+
+//- Content page
+block content
+			
+	header
+		div.first_fold
+			div.logo
+				img(src='../../images/svg/logoueb.svg' alt='logo UEB')
+				
+			nav
+				span.menu_mobile: img(src='../../images/svg/menu-mobile.svg' alt='Consultorio menu')
+				ul
+					li: a(href='#' target='') Consutorio Jurídico
+					li: a(href='#' target='') Áreas
+					li: a(href='#' target='') Pre-agendar cita
+					li
+						img(src='../../images/svg/phone-icon.svg' alt='Teléfono')
+						a(href='tel:+5730068686') 5730068686
+					
+		div.second_fold
+			div
+				h1 ¿Quieres saber cómo podemos ayudarte en áreas como derecho laboral, familiar o societario? 
+				a.btn-white(href='#' target='') Consultorio Jurídico
+			div
+				img(src="../../images/photos/header-banner.png" alt="header-banner")
+				a(href='#')
+					img(src='../../images/svg/resuelve-dudas.svg' alt='Resuelve tus dudas - preagenda tu cita')
+		
+		
+	
+	section.consultorio
+		div.left_content
+			img(src="../../images/photos/ilustracion-1.png" alt="consultorio jurídico")
+		div.right_content
+			h2 Consultorio Jurídico
+			
+			p El Consultorio Jurídco es un espacio académico y de práctica diseñado con el fin de recibir y atender a la comunidad en estado de vulnerabilidad y de especial protección, para brindarle asesoría y representación jurídica gratuita por parte de los estudiantes de los últimos años de la carrera de Derecho; esta actividad y sus competencias se encuentran reglamentadas en el Decreto Ley 196 de 1971 (Art.30), la Ley 583 de 2000, el Decreto 765 de 1977 y el Acuerdo PSAA13-9902 del 6 de Mayo de 2013 de la Sala Administrativa del Consejo Superior de la Judicatura.
+			
+			h4 ¿Cuál es nuestra Misión?
+			
+			p El Consultorio Jurídico de la Universidad El Bosque, cumple una doble misión; de una parte, brindar un espacio académico en el cual los alumnos de los últimos años de la Facultad de Derecho ponen en práctica los conocimientos adquiridos durante su carrera; y de la otra, cumplir con una función social, prestando atención jurídica gratuita y de calidad a la comunidad, siempre inculcando el respeto a la dignidad humana, a los principios y a los valores éticos que rigen su profesión, bajo la constante supervisión de abogados expertos en cada una de las áreas del Derecho.
+			
+			
+	section.tabs_container
+		
+		div#tabs.tabs
+			ul
+				li: a(href="#tabs-1") Derecho laboral y seguridad social
+				li: a(href="#tabs-2") Derecho de familia
+				li: a(href="#tabs-3") Derecho privado
+				li: a(href="#tabs-4") Derecho público
+				li: a(href="#tabs-5") Derecho penal
+					
+				
+			div#tabs-1.wow.slideInUp.timeit
+				div.content_left
+					img(src='../../images/photos/ilustracion-derecho-laboral.png' alt='Derecho laboral y seguridad social') 
+				div.content_right
+					p El área de derecho Laboral del Consultorio Jurídico de la Universidad El Bosque, presta un servicio integral de acompañamiento legal y jurídico, a personas que por su condición socioeconómica se encuentren en situación de vulnerabilidad en asuntos relacionados con la seguridad social y el derecho al trabajo. Teniendo en cuenta nuestra función de apoyo a la comunidad vulnerable, brindamos acompañamiento a personas de escasos recursos.
+					
+					div#accordion
+						<div class="click"> Algunos asuntos que se atienden </div>
+							div
+								p Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								
+			
+	section.grupos_apoyo
+		div.first_fold
+			div.left_content
+				img(src='../../images/svg/arrow-down-blue.svg' alt='Arrow down') 
+			div.right_content
+				h2 Grupos de Apoyo y trabajo del Consultorio Jurídico
+				p El Consultorio Jurídico de la Universidad El Bosque, cumple una doble misión; de una parte, brindar un espacio académico en el cual los alumnos de los últimos años de la Facultad de Derecho ponen en práctica los conocimientos adquiridos durante su carrera; y de la otra, cumplir con una función social, prestando atención jurídica gratuita y de calidad a la comunidad, siempre inculcando el respeto a la dignidad humana, a los principios y a los valores éticos que rigen su profesión, bajo la constante supervisión de abogados expertos en cada una de las áreas del Derecho.
+				
+		div.second_fold
+			+grupos-cards('../../images/photos/alpec-card.jpg', 'Alpec', 'Alpec', 'Atención legal para emprendedores y consumidores', '#')
+			+grupos-cards('../../images/photos/clima-card.jpg', 'Clima', 'Clima', 'Clínica legal e interdisciplinar del medio ambiente', '#')
+			+grupos-cards('../../images/photos/genero-card.jpg', 'Género y derecho', 'Género y derecho', 'Derecho sobre el género y viceversa', '#')
+			+grupos-cards('../../images/photos/adulto-card.jpg', 'Adulto mayor', 'Adulto mayor', 'Calidad de vida e intervención ciudadana y políticas públicas', '#')
+			
+	
+	section.banner_dudas
+		h1 Resuelve tus dudas, pre-agenda una cita 
+		p Una vez reciba la información, el Consultorio Jurídico de la Universidad El Bosque se comunicará con usted para acordar el día y hora que se hará la entrevista y la forma en que se realizará, ya sea vía telefonica o por medios virtuales
+		a(href='#') Pre-agenda tu cita
+		
+	section.lo_nuevo
+		h1 Lo que hay de nuevo
+		p Artículos de interés, enlaces, pregutnas frecuentes y más de lo que debes saber del Consultorío Jurídco de la Universidad El Bosque
+		
+		div.cards_container
+			+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Centro de noticias', 'Centro de noticias', '#', 'ver noticias')
+			+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Facultad de Ciencias Jurídicas', 'Facultad de Ciencias Jurídicas', '#', 'acceder')
+			+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Centro de Ayuda', 'Centro de Ayuda', '#', 'acceder')
+			+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Preguntas Frecuentes', 'Preguntas Frecuentes', '#', 'Consultar')
+			
+	
+	section.informacion_legal
+		img(src='../../images/svg/legal-icon.svg' alt='legal icon')
+		h1 Información legal de interés para la Comunidad
+		a(href='#') Consultar información
+		
+	
+	footer
+		div.first_fold
+			img(src='../../images/photos/consultorio-footer.png' alt='Consultorio jurídico')
+			
+			div.contacto
+				h5 Contacto
+				p Puede contactarnos por medio de nuestra extensión o nuestro celular, llamando a: Telefono:6489000 ext. 1585 Celular: 3053903206.
+				p: a(herf='mailto:consultoriojurídico@unbosque.edu.co' target='_blank') consultoriojurídico@unbosque.edu.co
+				p Calle 132 No. 7A – 79 Horario de atención: Lunes a viernes de 8:00am a 1:00pm y de 2:00pm a 5:00pm
+				
+			div.hablemos
+				h5 Hablemos
+				p Línea whatsapp
+				img(src='../../images/svg/whatsapp-icon.svg' alt='whatsapp')
+				a(herf='5730068686' target='_blank') 5730068686
+					
+				h5 Síguenos en 
+				div.redes
+					a(href='#' target='_blank')
+						img(src='../../images/svg/fb-icon.svg' alt='facebook')
+					a(href='#' target='_blank')
+						img(src='../../images/svg/yt-icon.svg' alt='youtube')
+					a(href='#' target='_blank')
+						img(src='../../images/svg/tw-icon.svg' alt='twitter')
+					
+			div.navegacion
+				h5 Navegación
+				
+				ul
+					li: a(href='#' target='') Consutorio Jurídico
+					li: a(href='#' target='') Áreas
+					li: a(href='#' target='') Centro de conciliación
+					li: a(href='#' target='') Pre-agendar cita
+					li: a(href='#' target='') Política de tratamiento de datos
+				
+
+		
+		div.second_fold
+			p Vigilada Mineducación. Personería Jurídica otorgada mediante resolución 11153 del 4 de Agosto de 1978.
+				
+				
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

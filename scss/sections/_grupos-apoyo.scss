@@ -1,0 +1,70 @@
+/* ---------------------------------- grupos de apoyo  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.grupos_apoyo{
+	
+	.first_fold{
+		margin: 3rem auto;
+		padding: 0;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 1.3fr);
+		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.left_content{
+			place-self: end;
+		}
+		
+	}
+	
+	.second_fold{
+		grid-gap: 2rem;
+		@include display-grid;
+		@include grid-parent-4-columns (1fr, 1fr, 1fr, 1fr);
+		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-2-columns (1fr, 1fr);
+		}
+		
+		@media (max-width: $breakpoint_4){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.card{
+			border-radius: .3rem;
+			border: 1px solid $color_light_grey;
+			text-align: center;
+			padding: 1rem;
+			overflow: hidden;
+			
+			img{
+				margin: -1rem -1rem 1rem;
+				max-width: initial;
+				width: 125%;
+			}
+			
+			h4{
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+			
+			p{
+				margin-top: 0;
+			}
+			
+			a{
+				@include btn-blue;
+			}
+			
+		}
+		
+	}
+	
+}
+	
+
+
+

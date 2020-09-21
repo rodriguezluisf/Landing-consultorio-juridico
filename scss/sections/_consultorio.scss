@@ -1,0 +1,31 @@
+/* ---------------------------------- Consultorio  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.consultorio{
+	@include max-width-2;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	margin: 6rem auto;
+	
+	@media (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+	}
+	
+	.left_content{
+		    justify-self: center;
+	}
+	
+	.right_content{
+		
+		h2{
+			
+		}
+		
+	}
+	
+}
+	
+
+
+

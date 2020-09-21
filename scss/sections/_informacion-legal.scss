@@ -1,0 +1,23 @@
+/* ---------------------------------- informacion legal  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.informacion_legal{
+	margin: 3rem auto;
+	text-align: center;
+	@include display-grid;
+	
+	img{
+		justify-self: center;
+	}
+	
+	a{
+		@include btn-blue;
+		margin: auto;
+	}
+	
+}
+	
+
+
+

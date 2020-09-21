@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="149px" viewBox="0 0 211 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page-1920" transform="translate(-633.000000, -2127.000000)" stroke="#0077C8" stroke-width="2">
+            <g id="block-apoyo" transform="translate(260.000000, 1987.000000)">
+                <g id="arrow" transform="translate(478.500000, 214.500000) rotate(-20.000000) translate(-478.500000, -214.500000) translate(384.000000, 171.000000)">
+                    <path d="M188.71875,15.3596811 C101.664062,-19.0752147 43.0924479,4.38962906 13.0039062,85.7542124" id="Path-2"></path>
+                    <line x1="13.0039062" y1="85.7542124" x2="0" y2="65.9534311" id="Path-3"></line>
+                    <line x1="13.0039062" y1="85.7542124" x2="35.3164062" y2="85.7542124" id="Path-4"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
