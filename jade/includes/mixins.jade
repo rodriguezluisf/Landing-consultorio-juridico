@@ -1,12 +1,12 @@
 //- ----------------------------
 //- ---------------------------- Grupos cards ------------------------------- //
 //- ----------------------------
-mixin grupos-cards(src, alt, title, text, link)
+mixin grupos-cards(src, alt, title, clase, text)
 	div.card
 		img(src=src alt=alt) 
 		h4= title
 		p= text
-		a(href=link) Consultar
+		a(class=clase) Consultar
 		
 		
 		

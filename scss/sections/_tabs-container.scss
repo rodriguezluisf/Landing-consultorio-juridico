@@ -15,6 +15,7 @@ section.tabs_container{
 		li{
 			text-align: center;
 			position: relative;
+			transition: all .2s ease-in-out;
 			
 			&:hover{
 				&:after{
@@ -25,6 +26,7 @@ section.tabs_container{
 					content:"";
 					left: 0;
 					bottom: -2px;
+					transition: all .2s ease-in-out;
 				}
 			}
 			
@@ -80,7 +82,8 @@ section.tabs_container{
 		
 	}
 	
-	#accordion{
+	#accordion,
+	.accordion{
 		
 		.click{
 			border: 1px solid $color_blue;
@@ -88,6 +91,10 @@ section.tabs_container{
 			padding: .5rem 1rem;
 			text-transform: uppercase;
 			cursor: pointer;
+			background: url(../../images/svg/plus-icon.svg);
+			background-repeat: no-repeat;
+		    background-position: 99% 50%;
+		    transition: all .2s ease-in-out;
 			@include font_universal (
 				$font_family_line_height: 24px,
 				$font_family_weight: 300,
@@ -98,8 +105,10 @@ section.tabs_container{
 			);
 			
 			&:hover{
-				background: $color_blue;
+				background: url(../../images/svg/plus-icon-white.svg) $color_blue;
 				color: $color_white;
+				background-repeat: no-repeat;
+				background-position: 99% 50%;
 			}
 			
 		}
@@ -109,6 +118,33 @@ section.tabs_container{
 			height: auto !important;
 			padding: 0 1rem;
 			border-radius: .2rem;
+			
+			ul{
+				padding: inherit;
+				margin: 1rem;
+				border-bottom: 0;
+				@include grid-parent-1-columns (1fr);
+				
+				&:hover{
+					&:after{
+						display: none;
+					}
+				}
+				
+				li{
+					text-align: left;
+					list-style-type: initial;
+					
+					&:hover{
+						&:after{
+							display: none;
+						}
+					}
+					
+				}
+				
+			}
+			
 		}
 		
 	}

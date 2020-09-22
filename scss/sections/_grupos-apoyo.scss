@@ -57,8 +57,51 @@ section.grupos_apoyo{
 			
 			a{
 				@include btn-blue;
+				cursor: pointer;
 			}
 			
+		}
+		
+	}
+	
+	.third_fold{
+		
+		>div{
+			margin: 3rem auto;
+			border: 2px solid $color_blue;
+			padding: 2rem;
+			border-radius: .3rem;
+			position: relative;
+			display: none;
+			
+			img{
+				position: absolute;
+				right: 1rem;
+				top: 1rem;
+				cursor: pointer;
+			}
+			
+			.text_two_colums{
+				grid-gap: 2rem;
+				margin-top: 1rem;
+				@include display-grid;
+				@include grid-parent-2-columns (1fr, 1fr);
+				
+				@media (max-width: $breakpoint_3){
+					@include grid-parent-1-columns (1fr);
+				}
+		
+			}
+			
+			b{
+				font-weight: 500;
+				color: $color_blue;
+			}
+			
+		}
+		
+		>div.open{
+			display: block;
 		}
 		
 	}

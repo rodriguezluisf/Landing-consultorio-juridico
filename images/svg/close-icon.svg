@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="detalle-apoyo-1366" transform="translate(-1231.000000, -2825.000000)" stroke="#0077C8" stroke-width="3">
+            <g id="block-detalle-apoyo" transform="translate(85.000000, 2791.000000)">
+                <g id="close" transform="translate(1148.000000, 36.000000)">
+                    <line x1="0.25" y1="0.25" x2="12.75" y2="12.75" id="Line-2"></line>
+                    <line x1="0.5" y1="0.5" x2="13" y2="13" id="Line-2-Copy" transform="translate(6.750000, 6.750000) scale(-1, 1) translate(-6.750000, -6.750000) "></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
