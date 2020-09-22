@@ -274,7 +274,7 @@ $font_family_group: $family) {
 	padding: 1rem 3rem 1rem 1rem;
 	border: 2px solid $color_white;
 	text-transform: uppercase;
-	border-radius: .2rem;
+	border-radius: 4rem;
 	background: url('../../images/svg/arrow-yellow-right.svg');
 	background-repeat: no-repeat;
     background-position: 90% 50%;
@@ -305,7 +305,7 @@ $font_family_group: $family) {
 	padding: 1rem;
 	border: 2px solid $color_white;
 	text-transform: uppercase;
-	border-radius: .2rem;
+	border-radius: 4rem;
 	background: $color_white;
 	@include font_universal (
 		$font_family_line_height: 20px,
@@ -332,7 +332,7 @@ $font_family_group: $family) {
 @mixin btn-blue{
 	padding: .6rem 1rem;
 	border: 2px solid $color_blue;
-	border-radius: .2rem;
+	border-radius: 4rem;
 	background: $color_white;
 	@include font_universal (
 		$font_family_line_height: 20px,
