@@ -28,5 +28,13 @@
 		$(".third_fold #clima").toggleClass("open");
 	});
 	
+	
+	$("section.grupos_apoyo .second_fold .card a.genero").click(function() {
+		$(".third_fold #genero").toggleClass("open");
+	});
+	$(".third_fold #genero img").click(function() {
+		$(".third_fold #genero").toggleClass("open");
+	});
+	
 })(jQuery);
 
