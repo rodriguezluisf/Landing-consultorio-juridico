@@ -126,9 +126,9 @@ header{
 				h1{
 					word-break: break-word;
 					@include font_universal (
-						$font_family_line_height: 48px,
+						$font_family_line_height: 36px,
 						$font_family_weight: 300,
-						$font_family_size: 44px,
+						$font_family_size: 34px,
 						$font_family_color: $color_white,
 						$font_family_letter_spacing: 1px,
 						$font_family_group: $font_acherus_black
@@ -137,6 +137,23 @@ header{
 					@media (max-width: $breakpoint_4){
 						font-size: 36px;
 						line-height: 39px;
+					}
+					
+					span{
+						@include font_universal (
+							$font_family_line_height: 36px,
+							$font_family_weight: 300,
+							$font_family_size: 34px,
+							$font_family_color: $color_white,
+							$font_family_letter_spacing: 1px,
+							$font_family_group: $font_acherus_thin
+						);
+						
+						@media (max-width: $breakpoint_4){
+							font-size: 36px;
+							line-height: 39px;
+						}
+					
 					}
 					
 				}
