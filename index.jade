@@ -27,7 +27,7 @@ block content
 			div
 				h1 Aquí encontrará la oportunidad para resolver sus inquietudes y conflictos jurídicos de manera gratuita, 
 					span con la confianza que estos serán atendidos y resueltos con prontitud y calidad, por un equipo altamente capacitado y con calidad humana. 
-				a.btn-white(href='#' target='') Consultorio Jurídico
+				//-a.btn-white(href='#' target='') Consultorio Jurídico
 			div
 				img(src="../../images/photos/header-banner.png" alt="header-banner")
 				a(href='#')
@@ -305,9 +305,9 @@ block content
 		p Artículos de interés, enlaces, pregutnas frecuentes y más de lo que debes saber del Consultorío Jurídco de la Universidad El Bosque
 		
 		div.cards_container
-			+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Centro de noticias', 'Centro de noticias', '#', 'ver noticias')
-			+lo-nuevo-cards('../../images/photos/facultad-icon.png', 'Facultad de Ciencias Jurídicas', 'Facultad de Ciencias Jurídicas', '#', 'acceder')
-			+lo-nuevo-cards('../../images/photos/ayuda-icon.png', 'Centro de Ayuda', 'Centro de Ayuda', '#', 'acceder')
+			//-+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Centro de noticias', 'Centro de noticias', '#', 'ver noticias')
+			+lo-nuevo-cards('../../images/photos/facultad-icon.png', 'Facultad de Ciencias Jurídicas', 'Facultad de Ciencias Jurídicas', 'http://juridicasypoliticas.unbosque.edu.co', 'acceder')
+			+lo-nuevo-cards('../../images/photos/ayuda-icon.png', 'Centro de Ayuda', 'Centro de Atención al Estudiante', 'http://juridicasypoliticas.unbosque.edu.co/centro-de-atencion-estudiantil', 'acceder')
 			+lo-nuevo-cards('../../images/photos/preguntas-icon.png', 'Preguntas Frecuentes', 'Preguntas Frecuentes', '#', 'Consultar')
 			
 	
@@ -337,7 +337,7 @@ block content
 				div.redes
 					a(href='#' target='_blank')
 						img(src='../../images/svg/fb-icon.svg' alt='facebook')
-					a(href='#' target='_blank')
+					a(href='https://www.youtube.com/channel/UCf_FpOpq6JLHIucEyZ8GBrg' target='_blank')
 						img(src='../../images/svg/yt-icon.svg' alt='youtube')
 					a(href='#' target='_blank')
 						img(src='../../images/svg/tw-icon.svg' alt='twitter')
