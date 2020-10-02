@@ -54,7 +54,7 @@ h3{
 h4{
 	word-break: break-word;
 	display: block;
-	text-transform: uppercase;
+	//text-transform: uppercase;
 	@include font_universal (
 		$font_family_line_height: 24px,
 		$font_family_weight: 300,

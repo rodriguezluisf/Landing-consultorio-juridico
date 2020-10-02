@@ -104,10 +104,11 @@ header{
 	.second_fold{
 		padding: 0 0 3rem 4rem;
 		@include display-grid;
-		@include grid-parent-2-columns (1fr, 1fr);
+		@include grid-parent-2-columns (1fr, 1.5fr);
 		
 		@media (max-width: $breakpoint_1){
 			padding: 0 0 3rem 0;
+			@include grid-parent-2-columns (1fr, 1fr);
 		}
 		
 		@media (max-width: $breakpoint_3){
@@ -161,6 +162,8 @@ header{
 			}
 			
 			&:last-child{
+				justify-content: center;
+				align-content: center;
 				@include display-grid;
 				
 				@media (max-width: $breakpoint_3){
@@ -173,9 +176,12 @@ header{
 				}
 				
 				a{
-					place-self: end;
-					@include grid-child-column (1, 2);
-					@include grid-child-row (1, 2);
+					//-place-self: end;
+					//-@include grid-child-column (1, 2);
+					//-@include grid-child-row (1, 2);
+					position: fixed;
+					bottom: 0;
+					right: 1rem;
 				}
 				
 			}
