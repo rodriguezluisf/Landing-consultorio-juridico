@@ -1,0 +1,96 @@
+/* ---------------------------------- banner dudas  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+    $phone: 380px;
+    $small: 450px;
+        $medium: 900px;
+    section.formulario{
+        text-align: center;
+        margin: 3rem auto;
+        background: $color_light_blue;
+        position: relative;
+        padding: 2rem;
+        padding-bottom: 4rem;
+        &:before,
+        &:after{
+            content: "";
+            background-color: #F5F8FF;
+            // height: 130%;
+            position: absolute;
+            // top: -30%;
+            z-index: -1;
+        }
+        &:before{
+            width: 100%;
+            left: -50%;
+        }
+        &:after{
+            width: 100%;
+            right: -50%;
+        }
+        
+        p{
+            margin: auto;
+        }
+        
+        a{
+            @include btn-white-2;
+            margin: 2rem auto 1rem
+        }
+        h1{
+            color:#EC2462;
+            @media (max-width: $breakpoint_3){
+                width: 250px;
+            }
+        }
+        
+        .cards_container{
+            grid-gap: 2rem;
+            margin: 3rem auto;
+            padding: 0;
+            @include display-grid;
+            @include grid-parent-3-columns (1fr, 1fr, 1fr);
+            
+            @media (max-width: $breakpoint_3){
+                @include grid-parent-2-columns (1fr, 1fr);
+            }
+            
+            @media (max-width: $breakpoint_4){
+                @include grid-parent-1-columns (1fr);
+            }
+            
+            .card{
+                text-align: center;
+                justify-self: center;
+                @include display-grid;
+                
+                img{
+                    justify-self: center;
+                }
+                
+                h2{
+                    margin: 1rem auto;
+                    font-size: 25px;
+                    line-height: 28px;
+                    font-weight: 300;
+                }
+                
+                &:nth-child(2){
+                    
+                    h2{
+                        max-width: initial;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+        
+    
+    
+    
+    

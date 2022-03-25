@@ -254,7 +254,7 @@ $font_family_group: $family) {
 // ------------------------ max widths --------------------------- //
 // --------------------------------------------------- //
 @mixin max-width{
-	max-width: 1400px;
+	max-width: 100%;
 	margin: auto;
 }
 
@@ -292,6 +292,37 @@ $font_family_group: $family) {
 		background-repeat: no-repeat;
 		background-position: 90% 50%;
 		color: $color_blue;
+	}
+	
+	&:after{
+		display: none;
+	}
+	
+}
+
+@mixin btn-fill-white{
+	padding: 1rem 3rem .5rem 2rem;
+	text-transform: uppercase;
+	border-radius: 4rem;
+	background: $color_white url('../../images/svg/arrow-yellow-right.svg');
+	background-repeat: no-repeat;
+    background-position: 90% 50%;
+    border: 2px solid $color_white;
+	@include font_universal (
+		$font_family_line_height:inherit,
+		$font_family_weight: 400,
+		$font_family_size: 17px,
+		$font_family_color: $color_blue_dark,
+		$font_family_letter_spacing: 1px,
+		$font_family_group: $font_family_din
+	);
+	
+	&:hover{
+		background: url('../../images/svg/arrow-yellow-right.svg');
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		color: $color_white;
+		border: 2px solid $color_white
 	}
 	
 	&:after{
@@ -354,6 +385,66 @@ $font_family_group: $family) {
 	
 }
 
+@mixin btn-fill-blue{
+	padding: 1rem 3rem 1rem 2rem;
+	text-transform: uppercase;
+	border-radius: 4rem;
+	background: $color_blue_dark url('../../images/svg/arrow-yellow-right.svg');
+	background-repeat: no-repeat;
+    background-position: 90% 50%;
+    border: 2px solid $color_blue_dark;
+	@include font_universal (
+		$font_family_line_height:inherit,
+		$font_family_weight: 400,
+		$font_family_size: 17px,
+		$font_family_color: $color_white,
+		$font_family_letter_spacing: 1px,
+		$font_family_group: $font_family_din
+	);
+	
+	&:hover{
+		background: url('../../images/svg/arrow-yellow-right.svg');
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		color: $color_white;
+		border: 2px solid $color_white
+	}
+	
+	&:after{
+		display: none;
+	}
+	
+}
+@mixin btn-fill-brand{
+	padding: 1rem 3rem 1rem 2rem;
+	text-transform: uppercase;
+	border-radius: 4rem;
+	background: $color_blue url('../../images/svg/arrow-yellow-right.svg');
+	background-repeat: no-repeat;
+    background-position: 90% 50%;
+    border: 2px solid $color_blue;
+	@include font_universal (
+		$font_family_line_height:inherit,
+		$font_family_weight: 400,
+		$font_family_size: 17px,
+		$font_family_color: $color_white,
+		$font_family_letter_spacing: 1px,
+		$font_family_group: $font_family_din
+	);
+	
+	&:hover{
+		background: url('../../images/svg/arrow-yellow-right.svg');
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		color: $color_white;
+		border: 2px solid $color_white
+	}
+	
+	&:after{
+		display: none;
+	}
+	
+}
 @mixin bg-laterales($color, $width: $bg-demasia-width) {
     position: relative;
     &::before,

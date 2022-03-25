@@ -16,6 +16,7 @@
 		"../scss/sections/_tabs-container.scss",
 		"../scss/sections/_grupos-apoyo.scss",
 		"../scss/sections/_banner-dudas.scss",
+		"../scss/sections/_formulario.scss",
 		"../scss/sections/_lo-nuevo.scss",
 		"../scss/sections/_informacion-legal.scss",
 		"../scss/sections/_footer.scss"

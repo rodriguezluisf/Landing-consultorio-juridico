@@ -1,9 +1,10 @@
 (function ($) {
 	
 	$("#tabs" ).tabs( { active: 0 } );	
+	$("#tabs_2" ).tabs( { active: 0 } );	
 	
 	$(".accordion").accordion({ header: ".click", collapsible: true, active: false });
-	
+
 	// -------------
 	// Menu mobile
 	
@@ -59,5 +60,6 @@
 		$(".third_fold #adulto").toggleClass("open");
 	});
 	
+
 })(jQuery);
 

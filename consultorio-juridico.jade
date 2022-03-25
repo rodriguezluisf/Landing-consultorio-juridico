@@ -1,0 +1,317 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Consultorio Jurídico - Universidad El Bosque
+
+//- Content page
+block content
+			
+	header.gradient-blue-light
+		include ./jade/template-parts/nav.jade			
+		div.second_fold
+			div
+				h1.fs-1 Consultorio Jurídico 
+					span Resuelve inquietudes y conflictos jurídicos de manera gratuita, con la confianza que estos serán atendidos y resueltos con prontitud y calidad, por un equipo altamente capacitado y con calidad humana. 
+				//-a.btn-white(href='#' target='') Consultorio Jurídico
+			div.mt-md-5.mt-0
+				img.m-off(src="../../images/photos/people-consultorio.png" alt="header-banner")
+				a.preagenda_cita(href='https://docs.google.com/forms/d/e/1FAIpQLSc53-icSmbGsRwB_cQ4JB_qvoyQ3rMGQnhOSY_kO27cPMMHgg/viewform?usp=sf_link' target='_blank')
+					img(src='../../images/svg/resuelve-pqr.png' alt='Resuelve tus dudas - preagenda tu cita')
+		
+		
+	
+	section.consultorio#consultorio
+		div.left_content
+			img(src="../../images/photos/ilustracion-1.png" alt="consultorio jurídico")
+		div.right_content
+			//h2 Consultorio Jurídico
+			
+			p El Consultorio Jurídico de la Universidad El Bosque, es el espacio dentro del cual los estudiantes de los últimos semestres de la facultad de Derecho realizan su práctica jurídica, brindando asesoría y representación legal gratuita y de calidad, a personas que se encuentran en estado de vulnerabilidad económica y social, esto dentro de las competencias asignadas por la ley y en cumplimiento del perfil biopsicosocial y cultural que identifica a nuestra comunidad universitaria.
+			
+			h3 ¿Cuál es nuestra Misión?
+			
+			p El Consultorio Jurídico de la Universidad El Bosque, cumple una doble misión; de una parte, brindar un espacio académico en el cual los alumnos de los últimos años de la Facultad de Derecho ponen en práctica los conocimientos adquiridos durante su carrera; y de la otra, cumplir con una función social, prestando atención jurídica gratuita y de calidad a la comunidad, siempre inculcando el respeto a la dignidad humana, a los principios y a los valores éticos que rigen su profesión, bajo la constante supervisión de abogados expertos en cada una de las áreas del Derecho.
+			
+			
+	section.tabs_container#areas
+		
+		div#tabs.tabs
+			ul
+				li: a(href="#tabs-1") Derecho laboral y seguridad social
+				li: a(href="#tabs-2") Derecho de familia
+				li: a(href="#tabs-3") Derecho privado
+				li: a(href="#tabs-4") Derecho público
+				li: a(href="#tabs-5") Derecho penal
+					
+				
+			div#tabs-1
+				div.content_left
+					img(src='../../images/photos/ilustracion-derecho-laboral.png' alt='Derecho laboral y seguridad social') 
+				div.content_right
+					p El área de derecho laboral presta un servicio integral de acompañamiento legal y jurídico, a personas que por su condición socioeconómica se encuentren en situación de vulnerabilidad en asuntos relacionados con la seguridad social y el derecho al trabajo. Teniendo en cuenta nuestra función de apoyo a la comunidad vulnerable, brindamos acompañamiento a personas de escasos recursos en temas como liquidaciones, estabilidad laboral reforzada por afectaciones a la salud, fuero de maternidad, fuero de pre pensionados, pensiones, protección a la maternidad, reintegro laboral, acoso laboral, riesgos laborales entre otros. Igualmente representamos en procesos ante la jurisdicción ordinaria laboral los cuales, por disposición de la ley, no pueden ser superiores a 20 salarios mínimos legales mensuales vigentes.
+					
+					div.accordion
+						<div class="click"> Algunos asuntos que se atienden </div>
+							div
+								ul
+									li Liquidaciones:
+									ul
+										li Elaboración de liquidaciones de acreencias laborales, acompañamiento y actuaciones tendientes a conseguir el pago.
+										li Acompañamiento en los trámites conciliatorios y enfoque hacia la utilización de métodos alternativos de solución de conflictos, como la transacción.
+								ul
+									li Estabilidad laboral reforzada por: afectaciones a la salud, fuero de maternidad, fuero de pre pensionados.
+								ul
+									li Pensiones:
+									ul
+										li Revisión y correcciones de reportes de semanas cotizados en pensión.
+										li Pensión de invalidez
+										li Pensión de sobrevivientes 
+										li Pensión de vejez
+										li Pensión familiar
+										li Subsidio a la cotización en el sistema de pensiones.
+								ul
+									li Protección a la maternidad: Fuero y pago licencia de maternidad. 
+									li Reintegro laboral
+									li Acoso laboral
+									li Riesgos laborales
+									li Sistema de salud, protección de afiliados, prestaciones económicas y asistenciales 
+									li Pago de incapacidades por parte de empleador, ARL, EPS o Fondo de pensiones
+									li Pérdida de capacidad laboral y proceso de calificación de la pérdida de capacidad laboral.
+									li Derechos de petición.
+									li Servicios sociales complementarios: BEPS y auxilios a adultos mayores a cargo de Colombia Mayor.
+									li Subsidio familiar y subsidio al desempleo a cargo de Cajas de compensación familiar.
+									li Procesos ante la jurisdicción ordinaria laboral: Se debe tener en cuenta que los procesos de los cuales puede conocer el Consultorio Jurídico, por disposición de la ley, no pueden ser superiores a 20 salarios mínimos legales mensuales vigentes
+									
+									
+									
+									
+			div#tabs-2
+				div.content_left
+					img(src='../../images/photos/ilustracion-derecho-familia.png' alt='Derecho de familia') 
+				div.content_right
+					p El área de derecho de Familia presta un servicio integral de acompañamiento legal y jurídico, a personas que por su condición socioeconómica se encuentren en situación de vulnerabilidad en asuntos que tengan relación o fundamento en la familia y sus integrantes (adultos mayores, menores de edad y demás miembros) en casos tales como fijación, disminución, aumento, exoneración, cobro de cuotas alimentarias. De igual manera brindamos orientación respecto a asuntos relativos a la unión marital de hecho, matrimonio, divorcio, violencia intrafamiliar, patria potestad, custodia entre otros.
+					p Su fundamento legal se encuentra en el Estatuto de la Abogacía, Decreto 196 de 1971,  artículo 6°.
+
+					
+					div.accordion
+						<div class="click"> Algunos asuntos que se atienden </div>
+							div
+								ul
+									li Fijación de cuota de alimentos. Abarca el acompañamiento en audiencia de conciliación y de ser necesario, procesalmente.
+									li Exoneración de cuota de alimentos.
+									li Disminución de la cuota alimentaria.
+									li Cobro de la cuota alimentaria, vía proceso ejecutivo de alimentos, tanto a favor de menores de edad, como de mayores adultos.
+									li Aumento de cuota alimentaria.
+									li Orientación jurídica en temas de familia, tales como:
+									ul
+										li Unión marital de hecho - sociedad patrimonial-.
+										li Separación de cuerpos.
+										li Separaciones de bienes.
+										li Privación, suspensión y restablecimiento de la patria potestad.
+										li Liquidación de la sociedad conyugal
+										li Divorcio y cesación de efectos civiles del matrimonio católico.
+										li Filiación.
+										li Derecho de los menores.
+										li Custodia de menores.
+										li Afectación a vivienda familiar y patrimonio de familia inembargable.
+										li Violencia intrafamiliar.
+										li Garantía del derecho a la capacidad legal plena de las personas con discapacidad, mayores de edad, y al acceso a los apoyos que puedan requerirse para el ejercicio de la misma.
+										
+										
+										
+										
+			div#tabs-3
+				div.content_left
+					img(src='../../images/photos/ilustracion-derecho-privado.png' alt='Derecho privado') 
+				div.content_right
+					p El área de derecho Privado se encuentra al servicio de las comunidades más necesitadas y se prestan servicios de asesoría legal, acompañamiento y seguimiento en casos tales como acciones de protección al consumidor, publicidad e información engañosa, seguros, acciones de tutela, contratos en general entre otros. Igualmente representamos en procesos de sucesión, los que se tramiten ante los jueces civiles municipales en única instancia y en procesos ejecutivos cuya cuantía no sea superior a los 40 salarios mínimos legales mensuales vigentes.
+					p Así las cosas, algunos de los asuntos sobre los cuales se brindan asesorías jurídicas son los relacionados con:
+
+
+					
+					div.accordion
+						<div class="click"> Algunos asuntos que se atienden </div>
+							div
+								ul
+									li Derecho Comercial 
+									ul
+										li Acciones de protección al consumidor
+										li Retracto y reversión de pago
+										li Habeas Data: Reporte en centrales de riesgo
+										li Publicidad e información engañosa
+										li Reclamaciones del consumidor financiero
+										li Seguros
+										li Tiquetes aéreos 
+										li Parqueaderos
+										li Comercio electrónico
+										li Solicitudes por servicios públicos domiciliarios
+										li Reclamación en el régimen de telecomunicaciones
+										li Protección contractual
+										li Inconvenientes de cualquier índole, provenientes de la relación como consumidores.
+										li Acciones de tutela, Responsabilidad por producto defectuosos, populares y de grupo por violación a derechos del consumidor.
+								ul
+									li Derecho Civil
+									ul
+										li Procesos ante los jueces civiles municipales en única instancia
+										li Procesos ejecutivos, hasta 40 salarios mínimos legales mensuales vigentes
+										li Procesos ejecutivos por obligaciones de hacer
+										li Cobro de cánones de arrendamiento 
+										li Restitución de inmueble arrendado
+										li Cancelación y reposición de título valor
+										li Procesos cuya cuantía no exceda de 40 salarios mínimos legales mensuales vigentes: sucesiones, responsabilidad civil contractual y extracontractual, entre otros.
+										li Acciones posesorias 
+								p En los demás asuntos de derecho privado se brinda asesoría jurídica.
+								p *El límite para cualquier tipo de representación ante la autoridad competente es de 40 salarios mínimos legales vigentes. En caso de superar esta cuantía se realizará solo una orientación al usuario.
+								
+								
+								
+								
+			div#tabs-4
+				div.content_left
+					img(src='../../images/photos/ilustracion-derecho-publico.png' alt='Derecho público') 
+				div.content_right
+					p El área de Derecho Público es competente dentro del marco constitucional para brindar asesorías jurídicas sobre asuntos que requieran presentar derechos de petición, acción de tutela, acción popular o acción de cumplimiento. Así como también, en asuntos legales para interponer recursos- agotamiento de la vía gubernativa y revocatoria directa.  Adicionalmente, quien sea miembro activo del Consultorio se encuentra facultado por la ley para actuar como abogado de oficio en proceso en temas relacionados con derecho disciplinario y procedimientos de responsabilidad fiscal.
+
+					p Por disposición legal, no tramitamos demandas ante la Jurisdicción Contencioso Administrativa como apoderados de particulares.
+ 
+					p Adicionalmente, quien sea miembro activo del Consultorio se encuentra facultado por la ley para actuar como abogado de oficio en proceso en temas relacionados con derecho disciplinario y procedimientos de responsabilidad fiscal.
+					
+					
+					
+					
+			div#tabs-5
+				div.content_left
+					img(src='../../images/photos/ilustracion-derecho-penal.png' alt='Derecho penal') 
+				div.content_right
+					p El área de derecho penal presta servicios de asesoría legal, acompañamiento y seguimiento de los casos para los cuales somos competentes según la ley como son los delitos de inasistencia alimentaria, violencia intrafamiliar, estafa, hurto, lesiones personales, injuria y calumnia, entre otros. Dentro de la asesoría integral se comprende la representación gratuita la cual implica que un/a estudiante del Consultorio Jurídico ejerza como apoderado/a del usuario en un proceso penal en el que éste sea implicado o víctima. De la misma manera, se elaboran documentos tales como denuncias, peticiones, acciones de tutela, alegatos, preclusiones o asistencia a las audiencias, entre otros que sean requeridos para lograr un buen desarrollo del caso.
+					//- p Algunos delitos sobre los cuales se le puede brindar asesoría son la inasistencia alimentaria, estafa, hurto, lesiones personales, injuria y calumnia, entre otros.
+					//- p En este aspecto se le brinda una asesoría integral al usuario que acude al consultorio, teniendo en cuenta que en primera medida se realiza una entrevista de la cual posteriormente se brinda orientación mediante un concepto a los usuarios, con el fin de aclarar inquietudes, sugerir acciones y plantear una línea jurídica a seguir para garantizar la protección y ejercicio de sus derechos. 
+					//- p En caso de no ser competentes en el tema por el cual el usuario acude, se le brinda una guía jurídica para que la persona sepa ante qué entidad acudir para que pueda hacer valer sus derechos o ejercer las respectivas acciones que sean pertinentes.
+					//- p Una vez verificado el caso y en caso de ser competentes, dentro de la asesoría integral se comprende la representación gratuita la cual implica que un/a estudiante del Consultorio Jurídico ejerza como apoderado/a del usuario en un proceso penal en el que éste sea implicado o víctima.
+					//- p Finalmente, en todo momento se brinda un seguimiento del caso para lo cual implica el constante acompañamiento y la elaboración de documentos tales como denuncias, peticiones, acciones de tutela, alegatos, preclusiones o asistencia a las audiencias, entre otros que sean requeridos para lograr un buen desarrollo del caso.
+
+								
+			
+	section.grupos_apoyo
+		div.first_fold
+			div.left_content
+				img(src='../../images/svg/arrow-down-blue.svg' alt='Arrow down') 
+			div.right_content
+				h2 Grupos de Apoyo y trabajo del Consultorio Jurídico
+				p El Consultorio Jurídico de la Universidad El Bosque, cumple una doble misión; de una parte, brindar un espacio académico en el cual los alumnos de los últimos años de la Facultad de Derecho ponen en práctica los conocimientos adquiridos durante su carrera; y de la otra, cumplir con una función social, prestando atención jurídica gratuita y de calidad a la comunidad, siempre inculcando el respeto a la dignidad humana, a los principios y a los valores éticos que rigen su profesión, bajo la constante supervisión de abogados expertos en cada una de las áreas del Derecho.
+				
+		div.second_fold
+			+grupos-cards('../../images/photos/alpec-card.jpg', 'Alpec', 'Alpec', 'alpec', 'Atención Legal Para Emprendedores y Consumidores', '')
+			+grupos-cards('../../images/photos/clima-card.jpg', 'Clima', 'Clima', 'clima', 'Clínica Legal e Interdisciplinar del Medio Ambiente', '')
+			+grupos-cards('../../images/photos/genero-card.jpg', 'Género y derecho', 'Género y Derecho', 'genero', 'Derecho sobre el género y viceversa', '')
+			+grupos-cards('../../images/photos/adulto-card.jpg', 'Adulto mayor', 'Adulto Mayor', 'adulto', 'Calidad de vida e intervención ciudadana y políticas públicas', '')
+			
+			
+		div.third_fold
+			div#alpec
+				img(src="../../images/svg/close-icon.svg" alt="close-icon")
+				h2 Atención Legal Para Emprendedores y Consumidores
+				div.text_two_colums
+					div
+						p <b>ALPEC</b> es una clínica jurídica dedicada a la atención legal para emprendedores y consumidores. A través de este grupo constituido por estudiantes de Consultorio Jurídico, se busca estudiar, asesorar y capacitar a comunidades, emprendimientos o pequeños comerciantes y consumidores en los diferentes campos y situaciones en los cuales se ven inmersos.
+						p De esta manera, a través de la investigación y asesoramiento, se busca llegar a aquellas personas que pretenden emprender y lo hagan dejando a un lado el estigma de no poseer los conocimientos técnicos, profesionales o jurídicos para comenzar por este camino del emprendimiento.
+						p Por medio de esta clínica se busca llegar a este grupo de personas y aportar en ese camino largo de lucha y disciplina para crear empresa.
+					div
+						p Por otra parte, la clínica ALPEC a través de la investigación, litigio estratégico y asesoramiento, se pretende concientizar al consumidor, de manera que logren conocer los derechos y deberes que ostentan tratándose de este posicionamiento en la sociedad. 
+						p Todo lo anterior se ha venido realizando con el fin de continuar planteando rutas de atención integral a los emprendedores y consumidores colombianos, y así cada día lograr una atención óptima y de alta calidad a los usuarios.
+						
+			div#clima
+				img(src="../../images/svg/close-icon.svg" alt="close-icon")
+				h2 Clínica Legal e Interdisciplinar del Medio Ambiente
+				div.text_two_colums
+					div
+						p <b>CLIMA</b> es un grupo de trabajo adscrito al Consultorio Jurídico del Programa de Derecho de la Universidad el Bosque, dirigido a desarrollar trabajo conjunto entre docentes, estudiantes e invitados especiales para adelantar litigios estratégicos, explorar iniciativas normativas, intervenciones ante procesos judiciales y hacer pedagogía sobre el derecho colectivo a gozar de un medio ambiente sano, buscando tender puentes entre la academia, el sector público, privado y la sociedad en temas relacionados con medio ambiente, naturaleza y desarrollo sostenible.
+						p ¿Por qué CLIMA es importante?
+						p En Colombia, los conflictos ambientales, entendidos como: “las controversias de información, intereses o valores entre al menos dos grupos independientes, referidas a cuestiones relacionadas con el acceso, disponibilidad y calidad de los recursos naturales y de las condiciones ambientales del entorno que afectan la calidad de vida de las personas” (Rodríguez, 2019), juegan un papel clave en la estructuración de los modelos de desarrollo, por lo cual requieren de un rol activo de la academia para su análisis y para generar aportes a su solución.
+						p Así mismo, debido a diversos factores históricos, sociales, económicos, entre otros, los conflictos ambientales han tendido a recaer sobre actores sociales que carecen de los conocimientos y asistencia adecuada para garantizar un real acceso a la justicia, esta situación, además de incrementar la conflictividad, ha impedido que ciertos sectores sociales puedan hacer un uso adecuado de las herramientas legales que el ordenamiento jurídico les otorga, y en consecuencia se ha generado una situación de desigualdad en el acceso a la administración de justicia.
+						p En este sentido, el Consultorio Jurídico de la Universidad El Bosque, con su objetivo de garantizar el acceso a la administración de justicia , identificó la necesidad de crear un espacio que tuviera como fin último materializar la justicia colectiva y la atención jurídica de casos estructurales en temas ambientales, los cuales no han tenido un apoyo decidido desde la academia (salvo casos aislados), y para tal propósito creó CLIMA, la primera clínica en el país con dedicación exclusiva a la investigación jurídica ambiental en el año 2016.
+						
+
+					div
+						p <b>¿Qué actividades realiza CLIMA?</b>
+						p CLIMA realiza cuatro (4) actividades principales: 
+						ul
+							li Generar documentos e insumos resultado de la investigación interdisciplinaria, con el objetivo de aportar conocimientos y análisis riguroso en la toma de decisiones a los actores claves que tienen incidencia en el sector ambiental.
+							li Garantizar, a través de diversos mecanismos legales, la participación y el acceso a la justicia de sectores a los cuales se les han vulnerado su derecho a un medio ambiente sano y derechos conexos.
+							li Desarrollar actividades de educación jurídica ambiental para garantizar el empoderamiento de las comunidades y generar conciencia entorno a la importancia de la protección del medio ambiente como derecho y deber.
+							li Realizar intervenciones en diferentes escenarios jurídicos, administrativos y políticos en los cuales los temas ambientales sean un factor clave, entre estos, intervenciones ante la rama judicial y otros espacios en donde las autoridades permitan la participación de la academia.
+						
+
+						
+						
+						
+						
+			div#genero
+				img(src="../../images/svg/close-icon.svg" alt="close-icon")
+				h2 Género y Derecho
+				div.text_two_colums
+					div
+						p La jurisprudencia nacional e internacional evidencian los múltiples efectos que tiene el Derecho sobre el Género y viceversa. Algunos de los ejemplos explorados por las altas cortes son la desigualdad salarial, las altas tasas de impunidad frente a delitos sexuales, las dobles jornadas laborales de las mujeres dentro y fuera del hogar. El Grupo de Género y Derecho, tiene el objetivo de entender investigar, adelantar campañas pedagógicas y realizar seguimiento a las acciones del Consultorio Jurídico relacionadas con estos dos conceptos que se entrelazan e impactan directamente la vida de la población que atiende el Consultorio Jurídico.
+						
+						
+						
+			div#adulto
+				img(src="../../images/svg/close-icon.svg" alt="close-icon")
+				h2 Adulto Mayor
+				div.text_two_colums
+					div
+						p <b>Calidad de vida del Adulto Mayor y de las personas con discapacidad, intervención ciudadana y políticas públicas:</b> La intervención ciudadana y las políticas públicas constituyen importantes escenarios para la concreción de la tarea de proyección de nuestro Consultorio Jurídico, en relación a la crítica situación en que se encuentra gran parte de los grupos poblacionales “adulto mayor” y “personas con dicapacidad”, evidenciada en diversos casos que se manejan al interior de esta Institución. Así, el grupo funciona en cumplimiento del interés misional de la Universidad relacionado con el desarrollo humano y la calidad de vida y se constituye como una estrategia para acercar a los ciudadanos a través de los instrumentos legales a mejores condiciones de vida.
+
+						p Se hace énfasis en actividades relacionadas con el derecho de petición, la acción de tutela y las políticas públicas existentes, partiendo de los casos atendidos en el Consultorio Jurídico y de las situaciones de alto impacto a nivel nacional, bajo un enfoque académico y práctico, mediante la exploración normativa y jurisprudencial, la asistencia a seminarios, la interacción con grupos de interés, la realización de documentos preliminares para la implementación de actividades, así como la realización de conceptos, conversatorios y demás tareas conexas.
+
+						p <b>Centro de Investigación en Derecho Penal y Política criminal – Francesco Carrara:</b> En el grupo de trabajo del área de penal se busca estudiar a través de la investigación socio- jurídica y criminológica la dinámica propia de los delitos sexuales en términos de la pregunta fundamental por los factores, causas, elementos subyacentes y consecuencias (entre otras cuestiones) de la tipificación de esta conducta, así como de su penalización con mayor o menor consideración sancionatoria. 
+						
+					div
+						p Entre otras labores y misiones trascendentales del grupo se encuentra la proyección de un artículo de los llamados “Artículo de investigación A1” o “Artículo resultado de investigación” en los términos de Colciencias (2017). Igualmente se proyecta con posterioridad a tal ejercicio investigativo la realización de foros, seminarios y/o encuentros académicos donde se dé cuenta de la investigación realizada. 
+						p Así mismo, se plantea la necesidad de una ruta de atención integral para el Consultorio Jurídico en la búsqueda de atención óptima y de alta calidad a los usuarios.
+						
+						p Datos de contacto:
+						p Su sede principal estará ubicada en la Calle 132 No. 7A – 79.
+						p Teléfono 6489000 ext. 1585 Celular 3053903206
+						p Correo electrónico <a href="mailto:consultoriojurídico@unbosque.edu.co" target="_blank">consultoriojurídico@unbosque.edu.co</a>
+						p Horario de atención en la sede: Lunes a viernes de 8.00 am a 1.00 pm y de 2.00 pm a 5.00 pm
+
+	
+	//section.banner_dudas#agendar
+	//	h1 Resuelve tus dudas legales
+	//	p Una vez reciba la información, el Consultorio Jurídico de la Universidad El Bosque se comunicará con usted para acordar el día y hora que se hará la entrevista y la //forma en que se realizará, ya sea vía telefonica o por medios virtuales
+	//	a(href='#' target='_blank') Pre-agenda tu cita
+		
+	section.lo_nuevo.mt-5
+		h1 Lo que hay de nuevo
+		p Artículos de interés, enlaces, pregutnas frecuentes y más de lo que debes saber del Consultorío Jurídco de la Universidad El Bosque
+		
+		div.cards_container
+			//-+lo-nuevo-cards('../../images/photos/noticias-icon.png', 'Centro de noticias', 'Centro de noticias', '#', 'ver noticias')
+			+lo-nuevo-cards('../../images/photos/facultad_virtual.jpg', 'Facultad de Ciencias Jurídicas', 'Facultad de Ciencias Jurídicas', 'http://juridicasypoliticas.unbosque.edu.co', 'acceder')
+			+lo-nuevo-cards('../../images/photos/centro-estudiantes.jpg', 'Centro de Ayuda', 'Centro de Atención al Estudiante', 'http://juridicasypoliticas.unbosque.edu.co/centro-de-atencion-estudiantil', 'acceder')
+			+lo-nuevo-cards('../../images/photos/preguntas-frecuentes.jpg', 'Preguntas Frecuentes', 'Preguntas Frecuentes', '#', 'Consultar')
+
+	section.informacion_legal.bg-light-white
+		.container
+			//img(src='../../images/svg/legal-icon.svg' alt='legal icon')
+			h1.color-blue Trámite de información al usuario
+			p.m-auto.pb-5.color-blue Usted puede acceder a los servicios del <b>Consultorio Jurídico</b> y <b>Centro de Conciliación</b> de la Universidad El Bosque de la siguiente manera:
+			.d-flex.align-items-md-center.align-items-start.mb-4
+				.dot.d-inline-block.bg-blue 1
+				.body-list.d-inline-block
+					|Llenando el <a href="https://docs.google.com/forms/d/e/1FAIpQLSc53-icSmbGsRwB_cQ4JB_qvoyQ3rMGQnhOSY_kO27cPMMHgg/viewform?usp=sf_link" target="_blank"><b>formulario virtual</b></a>: Una vez sea remitido, nos comunicaremos con usted para acordar el día y la hora de la entrevista, así como la forma en que se llevará a cabo, telefónicamente o por medios virtuales, de acuerdo con su elección.
+			.d-flex.align-items-md-center.align-items-start.mb-4
+				.dot.d-inline-block.bg-blue 2
+				.body-list.d-inline-block
+					|Puede <span class="color-blue-dark"><b>contactarnos</b></span> por medio de nuestra extensión o nuestro celular, llamando al <span class="color-blue-dark"><b>6489000 ext. 1585</b></span>, celular <span class="color-blue-dark"><b>3053903206</b></span>
+			.d-flex.align-items-md-center.align-items-start.mb-4
+				.dot.d-inline-block.bg-blue 3
+				.body-list.d-inline-block
+					|Puede escribirnos al correo <a href="mailto:consultoriojuridico@unbosque.edu.co"><b>consultoriojuridico@unbosque.edu.co</b></a>
+
+			a.btn-fill-brand(href='https://wa.me/+573053903206') Llámanos o escríbenos
+		
+	
+	include ./jade/template-parts/footer.jade	

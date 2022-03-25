@@ -3,7 +3,7 @@
 
 
 section.grupos_apoyo{
-	
+	@include max-width-2;
 	.first_fold{
 		margin: 3rem auto;
 		padding: 0;
@@ -39,7 +39,7 @@ section.grupos_apoyo{
 			text-align: center;
 			padding: 1rem;
 			overflow: hidden;
-			
+			background: white;
 			img{
 				margin: -1rem -1rem 1rem;
 				max-width: initial;

@@ -22,7 +22,7 @@ html{
 		}
 		
 		@media (max-width: 1500px){
-			padding: 0 3%;
+			//padding: 0 3%;
 		}
 		
 		img{
@@ -72,6 +72,18 @@ html{
 		
 		a.btn-white{
 			@include btn-white;
+		}
+		a.btn-fill-white{
+			@include btn-fill-white;
+			@media (max-width: $breakpoint_3){
+					padding: 1rem 3rem 1rem 2rem;
+				}
+		}
+		a.btn-fill-blue{
+			@include btn-fill-blue;
+		}
+		a.btn-fill-brand{
+			@include btn-fill-brand;
 		}
 		
 		::after, ::before{

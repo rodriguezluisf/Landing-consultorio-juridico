@@ -6,15 +6,24 @@ header{
 	@include max-width;
 	padding: 0 2rem;
 	background: $color_blue;
-	border-radius: 0 0 .5rem .5rem;
+	//border-radius: 0 0 .5rem .5rem;
+	.logo{
+		a{
+			padding: 0;
+		}
+	}
 	
 	.first_fold{
+		@include max-width-2;
 		padding: 0 4rem;
 		@include display-grid;
 		@include grid-parent-2-columns (10rem, 1fr);
 		
 		@media (max-width: $breakpoint_1){
 			padding: 0 0 3rem 0;
+		}
+		@media (max-width: $breakpoint_2){
+			padding: 0 0 2rem 0;
 		}
 		
 		nav{
@@ -25,7 +34,7 @@ header{
 			.menu_mobile{
 				display: none;
 				cursor: pointer;
-				@media (max-width: $breakpoint_3_1){
+				@media (max-width: $breakpoint_3){
 					display: inline-block;
 				}
 			}
@@ -83,12 +92,12 @@ header{
 				display: block;
 				position: absolute;
 				right: 0;
-				background: $color_blue;
+				background: $color_blue_dark;
 				z-index: 10;
 				padding: 2rem;
 				border: 2px solid $color_white;
 				border-radius: .2rem;
-				min-width: 10rem;
+				min-width: 100%;
 				
 				li{
 					display: block;
@@ -102,12 +111,13 @@ header{
 	}
 	
 	.second_fold{
-		padding: 0 0 3rem 4rem;
+		@include max-width-2;
+		padding: 0 0 0 4rem;
 		@include display-grid;
 		@include grid-parent-2-columns (1fr, 1.5fr);
 		
 		@media (max-width: $breakpoint_1){
-			padding: 0 0 3rem 0;
+			padding: 0;
 			@include grid-parent-2-columns (1fr, 1fr);
 		}
 		
@@ -141,18 +151,20 @@ header{
 					}
 					
 					span{
+						display: block;
+						margin-top: 2rem;
 						@include font_universal (
-							$font_family_line_height: 36px,
+							$font_family_line_height: 26px,
 							$font_family_weight: 300,
-							$font_family_size: 34px,
+							$font_family_size: 22px,
 							$font_family_color: $color_white,
-							$font_family_letter_spacing: 1px,
+							$font_family_letter_spacing: 0px,
 							$font_family_group: $font_acherus_thin
 						);
 						
 						@media (max-width: $breakpoint_4){
-							font-size: 36px;
-							line-height: 39px;
+							font-size: 18px;
+							line-height: 22px;
 						}
 					
 					}
@@ -182,6 +194,7 @@ header{
 					position: fixed;
 					bottom: 0;
 					right: 1rem;
+					z-index: 100;
 				}
 				
 			}
@@ -233,6 +246,50 @@ header{
 			
 		}
 		
+	}
+	.hero{
+		@include max-width-2;
+		//padding: 0 0 3rem 4rem;
+		&--img{
+			margin-bottom: -1rem !important;
+			position: relative;
+			z-index: 1;
+		}
+		h1{
+			word-break: break-word;
+			@include font_universal (
+				$font_family_line_height: 36px,
+				$font_family_weight: 600,
+				$font_family_size: 34px,
+				$font_family_color: $color_white,
+				$font_family_letter_spacing: 1px,
+				$font_family_group: $font_acherus_black
+			);
+			
+			@media (max-width: $breakpoint_3){
+				font-size: 25px;
+				line-height: 30px;
+				$font_family_weight: 600,
+			}
+			
+			span{
+				@include font_universal (
+					$font_family_line_height: 36px,
+					$font_family_weight: 300,
+					$font_family_size: 34px,
+					$font_family_color: $color_white,
+					$font_family_letter_spacing: 1px,
+					$font_family_group: $font_acherus_thin
+				);
+				
+				@media (max-width: $breakpoint_4){
+					font-size: 26px;
+					line-height: 30px;
+				}
+			
+			}
+			
+		}
 	}
 	
 }

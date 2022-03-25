@@ -1,0 +1,140 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Consultorio Jurídico
+
+//- Content page
+block content
+			
+
+	header.gradient-blue
+		include ./jade/template-parts/nav.jade					
+		div.second_fold
+			div
+				h1.fs-1 Centro de Conciliación
+					span Resuelve inquietudes y conflictos jurídicos de manera gratuita, con la confianza que estos serán atendidos y resueltos con prontitud y calidad, por un equipo altamente capacitado y con calidad humana.  
+			div
+				img.m-off(src="../../images/photos/people-centro-de-conciliacion.png" alt="header-banner")
+				a.preagenda_cita(href='https://docs.google.com/forms/d/e/1FAIpQLSc53-icSmbGsRwB_cQ4JB_qvoyQ3rMGQnhOSY_kO27cPMMHgg/viewform?usp=sf_link' target='_blank')
+					img(src='../../images/svg/resuelve-pqr.png' alt='Resuelve tus dudas - preagenda tu cita')
+		
+
+
+	section.consultorio#consultorio
+		div.left_content
+			img(src="../../images/photos/logo-centro.png" alt="centro conciliacion")
+		div.right_content
+			p Somos una dependencia adscrita a la Facultad de Ciencias Jurídicas y Políticas creado en cumplimiento de la ley 640 de 2001 para facilitar el diálogo entre las partes involucradas en un conflicto, quienes mediante la aplicación de la conciliación gestionan por sí mismas la solución de sus diferencias con la ayuda de un tercero imparcial, neutral y objetivo, denominado Conciliador.
+			h3.color-blue-dark Nuestra MISIÓN
+			p Promover el acceso a la justicia por parte de las personas de escasos recursos y/o pertenecientes a alguno de los grupos más vulnerables de la población, para servir como facilitador en la solución de diferencias a través de la utilización de los Métodos Alternativos de Solución de Conflictos -MASC- y principalmente el de la conciliación, con la participación de los estudiantes y los docentes asesores plenamente capacitados para ello.
+			h3.color-blue-dark Nuestra VISIÓN
+			p El CCCJ busca ser un Centro líder en el país en la prestación del servicio de la conciliación, e innovador en la pedagogía, promoción, divulgación y recta aplicación de los MASC, teniendo como fundamento el servicio social, la igualdad y el respeto por el otro y contribuyendo a la formación de profesionales idóneos y comprometidos con la justicia.
+			
+	section#faq.text-center.py-4
+			h1.color-blue-dark Preguntas Frecuentes
+	section#preguntascentroconciliacion
+		.wrap-preguntas.pb-5
+			div.left_content
+				h4.color-blue-dark.fw-bold ¿Qué es el Centro de Conciliación?
+				p Dependencia autónoma del Consultorio Jurídico de la Universidad El Bosque cuya autorización se encuentra en trámite ante el Ministerio de Justicia y del Derecho.
+				h4.color-blue-dark.fw-bold ¿Qué hace el Centro de Conciliación?
+				p Administra justicia.
+				h4.color-blue-dark.fw-bold ¿Cómo lo hace?
+				p Realizando Audiencias de Conciliación Extrajudiciales en Derecho.
+				h4.color-blue-dark.fw-bold ¿Quiénes lo hacen?
+				p Nuestros Estudiantes Conciliadores y Docentes Asesores Conciliadores
+			div.right_content
+				h4.color-blue-dark.fw-bold ESTRUCTURA DEL CCCJ 
+				p  Director del Centro de Conciliación - Docentes Asesores Conciliadores - Practicante de Psicología - Secretaria - Estudiantes Conciliadores
+				h4.color-blue-dark.fw-bold ¿Dónde se hace?
+				p En la Sede del CCCJ La conciliación es  un mecanismo de resolución de conflictos a través del cual dos o más personas gestionan por sí mismas la solución de sus diferencias con la ayuda de un tercero neutral y calificado denominado conciliador. (Art. 64 ley 446 de 1998) El efecto del acuerdo conciliatorio es el TRÁNSITO A COSA JUZGADA y el del Acta de Conciliación es que presta MÉRITO EJECUTIVO.
+				h4.color-blue-dark.fw-bold ¿Qué es la conciliación?
+				p Es un mecanismo de resolución de conflictos a través del cual dos o mas personas gestionan por sí mismas la solución de sus diferencias con la ayuda de un tercero neutral y calificado denominado conciliador.
+			
+	section.tabs_container_centro#asuntosconciliables
+		
+		div#tabs_2.tabs
+			ul
+				li: a(href="#tabs-6") Asuntos conciliables
+				li: a(href="#tabs-7") Etapas del procedimiento conciliatorio
+					
+				
+			div#tabs-6
+				div.content_left
+					img(src='../../images/photos/ilustracion-asuntos-conciliables.png' alt='Derecho laboral y seguridad social') 
+				div.content_right
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.					
+					div.accordion
+						<div class="click"> Algunos asuntos que se atienden </div>
+							div
+								ul
+									li Custodia y régimen de visitas de menores
+									li Obligaciones alimentarias.
+									li Fijación, Ofrecimiento, Disminución, Aumento, Exoneración.
+									li Disolución y liquidación de sociedad conyugal
+									li Liquidaciones de la sociedad patrimonial entre compañeros permanentes. 
+									li Unión Marital de Hecho. (Declaración y Disolución)
+									li Responsabilidad civil
+									li Reconocimiento de obligación
+									li Restitución de inmueble arrendado
+									li Acuerdos de pago
+
+									
+									
+			div#tabs-7
+				div.content_left
+					img(src='../../images/photos/ilustracion-etapas-conciliacion.png' alt='Derecho de familia') 
+				div.content_right
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					div.accordion
+						<div class="click"> Algunos asuntos que se atienden </div>
+							div
+								ul
+									li Asesoría en Consultorio Jurídico y elaboración de la solicitud de Audiencia de Conciliación. 
+									li Designación de conciliador. 
+									li Revisión y control de legalidad a la solicitud.
+									li Calificación del asunto. 
+									li Programación de fecha y hora para la realización de la Audiencia de Conciliación.
+									li Elaboración y envío de las Citaciones a las partes. 
+									li Día de la Audiencia: Realización de la Audiencia de conciliación o no realización.
+									li Elaboración del Acta de Conciliación o Constancia según sea el caso. 
+									li Registro ante el SICAAC.
+    
+	
+	section.fotos
+		h1.color-blue-dark Nuestro Centro de Conciliación
+		p Te presentamos nuestro centro de conciliación, espacio dedicados para asesorarte y realizar el procedimiento correspondiente.
+
+	section.pb-5
+		div.carousel.carousel-main(data-flickity='{ "imagesLoaded": true, "percentPosition": false }')
+				img(src='../../images/photos/instalaciones/1.png' alt='legal icon' style="margin-left:30px;margin-right:30px;"  )
+				img(src='../../images/photos/instalaciones/2.png' alt='legal icon' style="margin-left:30px;margin-right:30px;")
+				img(src='../../images/photos/instalaciones/3.png' alt='legal icon' style="margin-left:30px;margin-right:30px;")
+				img(src='../../images/photos/instalaciones/4.png' alt='legal icon' style="margin-left:30px;margin-right:30px;")
+				img(src='../../images/photos/instalaciones/5.png' alt='legal icon' style="margin-left:30px;margin-right:30px;")
+				img(src='../../images/photos/instalaciones/6.png' alt='legal icon' style="margin-left:30px;margin-right:30px;")
+				img(src='../../images/photos/instalaciones/7.png' alt='legal icon' style="margin-left:30px;margin-right:30px;")
+
+	section.informacion_legal.bg-ligth
+		.container
+			//img(src='../../images/svg/legal-icon.svg' alt='legal icon')
+			h1.color-blue-dark  Trámite de información al usuario
+			p.m-auto.pb-5.color-blue-dark Usted puede acceder a los servicios del <b>Consultorio Jurídico</b> y <b>Centro de Conciliación</b> de la Universidad El Bosque de la siguiente manera:
+			.d-flex.align-items-md-center.align-items-start.mb-4
+				.dot.d-inline-block.bg-blue-dark 1
+				.body-list.d-inline-block
+					|Llenando el <a href="https://docs.google.com/forms/d/e/1FAIpQLSc53-icSmbGsRwB_cQ4JB_qvoyQ3rMGQnhOSY_kO27cPMMHgg/viewform?usp=sf_link" target="_blank"><b>formulario virtual</b></a>: Una vez sea remitido, nos comunicaremos con usted para acordar el día y la hora de la entrevista, así como la forma en que se llevará a cabo, telefónicamente o por medios virtuales, de acuerdo con su elección.
+			.d-flex.align-items-md-center.align-items-start.mb-4
+				.dot.d-inline-block.bg-blue-dark 2
+				.body-list.d-inline-block
+					|Puede <span class="color-blue"><b>contactarnos</b></span> por medio de nuestra extensión o nuestro celular, llamando al <span class="color-blue-dark"><b>6489000 ext. 1585</b></span>, celular <span class="color-blue-dark"><b>3053903206</b></span>
+			.d-flex.align-items-md-center.align-items-start.mb-4
+				.dot.d-inline-block.bg-blue-dark 3
+				.body-list.d-inline-block
+					|Puede escribirnos al correo <a href="mailto:consultoriojuridico@unbosque.edu.co"><b>consultoriojuridico@unbosque.edu.co</b></a>
+
+			a.btn-fill-blue(href='https://wa.me/+573053903206') Llámanos o escríbenos
+		
+	
+	include ./jade/template-parts/footer.jade	

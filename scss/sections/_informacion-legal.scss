@@ -3,9 +3,10 @@
 
 
 section.informacion_legal{
-	margin: 3rem auto;
+	margin-bottom: 0;
 	text-align: center;
-	@include display-grid;
+	padding:3rem 0;
+	//@include display-grid;
 	
 	img{
 		justify-self: center;
@@ -14,6 +15,35 @@ section.informacion_legal{
 	a{
 		@include btn-blue;
 		margin: auto;
+	}
+	.btn-fill-blue{
+		&:hover{
+			background: $color_blue;
+		}
+	}
+	.dot{
+		font-size: 30px;
+		font-weight: bold;
+		border-radius: 50px;
+		padding: 0.5rem 1rem;
+		color:white;
+		line-height: 30px;
+		margin-right: 2rem;
+	}
+	.body-list{
+		text-align: left;
+		font-size: 18px;
+		a{
+			padding: 0;
+			border:0;
+			text-decoration: underline;
+			&:hover{
+				background: none;
+				text-decoration: underline;
+				color: $color_blue;
+
+			}
+		}
 	}
 	
 }

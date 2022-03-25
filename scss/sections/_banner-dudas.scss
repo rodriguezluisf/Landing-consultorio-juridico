@@ -3,21 +3,23 @@
 
 
 section.banner_dudas{
-	background: url(../../images/photos/banner-form.jpg);
+	background: url(../../images/photos/banner-pre.jpg);
 	margin: 3rem auto;
 	text-align: center;
 	padding: 5rem 1rem;
 	border-radius: .3rem;
-	
+	background-size: cover;
 	h1,
 	p{
 		color: $color_white;
 		@include max-width-p;
 		margin: 1rem auto;
+		text-shadow: 0 0 black;
 	}
 	
 	a{
 		@include btn-white-2;
+		text-shadow: 0 0 black;
 		margin: 1rem auto 1rem
 	}
 	
